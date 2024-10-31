@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    { }
+.caja1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes animacion {
+    0%{
+        background-color: blue;
+        top: 0;
+        left: 0;
+    }
+    25%{background-color: blueviolet; top: 0; left: 400px;}
+    50%{background-color: rgb(190, 70, 238); top: 400px; left: 400px;}
+    75%{background-color: rgb(139, 95, 160); top: 400px; left: 0;}
+    100%{background-color: rgb(130, 192, 228); top: 0; left: 0;}
+}
